@@ -13,13 +13,13 @@ add1 <- function(x, y) {
 #' Add 3 numbers
 #'
 #' Function adds together 2 numbers
-#' @param x The first number
+#' @param x The first number. Once again
 #' @param y The second number
 #' @param z The third number
 #' @return A single value that is the sum of the 3 numbers
 #' @ export
 #' @author Kathryn
 add_3_nums <- function(x, y, z){
-    final <- x+y+z
+    final <- x+y+ z
     final
 }
