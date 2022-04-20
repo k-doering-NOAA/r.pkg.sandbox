@@ -1,4 +1,4 @@
-#' Multiply 2 numbers
+#' Multiply 2 numbers together
 #'
 #' This function multiplies 2 numbers together
 #' @param x The first number to multiply
