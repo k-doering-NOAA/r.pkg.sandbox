@@ -2,7 +2,7 @@
 % Please edit documentation in R/multiply.R
 \name{multiply1}
 \alias{multiply1}
-\title{Multiply 2 numbers}
+\title{Multiply 2 numbers together}
 \usage{
 multiply1(x, y)
 }
