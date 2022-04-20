@@ -7,5 +7,5 @@
 #' @export
 multiply1 <- function(x, y) {
   final <- x * y + 1
-  final
+  final#comment
 }
