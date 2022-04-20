@@ -6,6 +6,6 @@
 #' @returns THe multiplication of the 2 numbers
 #' @export
 multiply1 <- function(x, y) {
-  final <- x * y
+  final <- x * y + 1
   final
 }
