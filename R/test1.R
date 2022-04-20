@@ -19,9 +19,9 @@ add1 <- function(x, y) {
 #' @return A single value that is the sum of the 3 numbers
 #' @ export
 #' @author Kathryn
-add_3_nums <- function(x, y, z){
-    final <- x+y+ z
-    final
+add_3_nums <- function(x, y, z) {
+  final <- x + y + z
+  final
 }
 
 #' Add 4 numbers
@@ -34,7 +34,7 @@ add_3_nums <- function(x, y, z){
 #' @return A single value that is the sum of the 3 numbers
 #' @ export
 #' @author Kathryn
-add_3_nums <- function(x, y, z, a){
-    final <- x+y+ z + a
-    final
+add_3_nums <- function(x, y, z, a) {
+  final <- x + y + z + a
+  final
 }
