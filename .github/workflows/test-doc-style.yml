@@ -1,10 +1,10 @@
 # document and style  using reusable workflow
 on:
-  pull_request:
+  push:
 name: call-doc-and-style-r
 jobs:
   call-workflow:
     uses: nmfs-fish-tools/ghactions4r/.github/workflows/doc-and-style-r.yml@test-commit-to-pr-doc-style
     with: 
-      commit-directly-to-pr: true
+      commit-directly-to-pr: false
       
