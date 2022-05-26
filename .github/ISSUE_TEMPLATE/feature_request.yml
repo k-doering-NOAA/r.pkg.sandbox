@@ -32,7 +32,7 @@ body:
       placeholder: Other solutions include ...
     validations:
       required: true
-    - type: textarea
+  - type: textarea
     id: stats
     attributes:
       label: Statistical validity, if applicable
