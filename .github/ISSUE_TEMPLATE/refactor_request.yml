@@ -1,7 +1,7 @@
 name: Refactor
 description: Change the current structure of the code
 title: "[Refactor]: "
-labels: ["refactor"]
+labels: ["kind: refactor", "status: triage_needed"]
 assignees:
   - ChristineStawitz-NOAA
 body:
