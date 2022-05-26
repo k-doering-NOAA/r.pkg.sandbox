@@ -44,6 +44,18 @@ body:
     validations:
       required: false
   - type: dropdown
+    id: os
+    attributes:
+      label: What OS are you seeing the problem on?
+      multiple: true
+      options:
+        - Windows
+        - Mac
+        - Linux
+        - Other
+    validations: 
+      required: false
+  - type: dropdown
     id: version
     attributes:
       label: Version
