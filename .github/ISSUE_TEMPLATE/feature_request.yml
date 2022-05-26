@@ -46,37 +46,18 @@ body:
       description: If this feature is necessary to satisfy the Terms of Reference for your fishery management body, please explain why here and describe which management body.
     validations:
       required: false
-  - type: dropdown
-    id: version
-    attributes:
-      label: Version
-      description: What version of our software are you running?
-      options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
-    validations:
-      required: true
-  - type: dropdown
-    id: browsers
-    attributes:
-      label: What browsers are you seeing the problem on?
-      multiple: true
-      options:
-        - Firefox
-        - Chrome
-        - Safari
-        - Microsoft Edge
   - type: textarea
-    id: logs
+    id: context
     attributes:
-      label: Relevant log output
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
-      render: shell
+      label: Additional context
+      description: Add any other context or screenshots about the feature request here.
+    validations:
+      required: false
   - type: checkboxes
     id: terms
     attributes:
       label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://noaa-fims.github.io/collaborative_workflow/code-of-conduct.html#code-of-conduct)
       options:
         - label: I agree to follow this project's Code of Conduct
           required: true
