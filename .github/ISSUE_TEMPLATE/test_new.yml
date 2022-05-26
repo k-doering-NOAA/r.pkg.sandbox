@@ -28,6 +28,14 @@ body:
         4. See error
     validations:
       required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: A clear and concise description of what you expected to happen.
+      placeholder: I expected...
+    validations:
+      required: true
   - type: dropdown
     id: version
     attributes:
