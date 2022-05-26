@@ -74,6 +74,13 @@ body:
       label: Which version of FIMS are you seeing the problem on?
     validations:
       required: false
+  - type: textinput
+    id: context
+    attributes:
+      label: Additional Context
+      description: Add any other context about the problem here.
+    validations:
+      required: false
   - type: checkboxes
     id: terms
     attributes:
