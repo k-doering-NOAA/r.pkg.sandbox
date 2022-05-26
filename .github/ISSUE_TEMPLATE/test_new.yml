@@ -74,7 +74,7 @@ body:
       label: Which version of FIMS are you seeing the problem on?
     validations:
       required: false
-  - type: textinput
+  - type: textarea
     id: context
     attributes:
       label: Additional Context
