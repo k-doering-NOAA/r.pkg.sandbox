@@ -1,9 +1,9 @@
-name: Test New
-description: File a bug report
+name: Bug Report
+description: Report a bug that causes the existing functionality to differ from what is described in the development plan
 title: "[Bug]: "
-labels: ["bug", "triage"]
+labels: ["kind: bug", "triage_needed"]
 assignees:
-  - octocat
+  - ChristineStawitz-NOAA
 body:
   - type: markdown
     attributes:
