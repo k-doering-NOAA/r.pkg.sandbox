@@ -31,4 +31,5 @@ body:
       description: By submitting this issue, you agree to follow our [Code of Conduct](https://noaa-fims.github.io/collaborative_workflow/code-of-conduct.html#code-of-conduct)
       options:
         - label: I agree to follow this project's Code of Conduct
-          required: true
+    validations:
+      required: true
