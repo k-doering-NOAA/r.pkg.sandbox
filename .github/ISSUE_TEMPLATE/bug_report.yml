@@ -5,10 +5,6 @@ labels: ["kind: bug", "status: triage_needed"]
 assignees:
   - ChristineStawitz-NOAA
 body:
-  - type: markdown
-    attributes:
-      value: |
-        Thanks for taking the time to fill out this bug report!
   - type: textarea
     id: describe
     attributes:
