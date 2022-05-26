@@ -1,5 +1,5 @@
 name: Bug Report
-description: Report a bug that causes the existing functionality to differ from what is described in the development plan.
+description: Report a bug that causes the existing functionality to differ from what is described in the development plan
 title: "[BUG]: "
 labels: ["kind: bug", "status: triage_needed"]
 assignees:
