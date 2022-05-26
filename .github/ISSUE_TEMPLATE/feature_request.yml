@@ -39,6 +39,13 @@ body:
       description: Please link to a paper or reference that describes how this approach improves accuracy or statistical power.
     validations:
       required: false
+  - type: textarea
+    id: management
+    attributes:
+      label: Describe if this is needed for a management application
+      description: If this feature is necessary to satisfy the Terms of Reference for your fishery management body, please explain why here and describe which management body.
+    validations:
+      required: false
   - type: dropdown
     id: version
     attributes:
