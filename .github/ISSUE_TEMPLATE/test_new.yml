@@ -68,6 +68,12 @@ body:
         - Other
     validations:
       required: false
+  - type: input
+    id: version
+    attributes:
+      label: Which version of FIMS are you seeing the problem on?
+    validations:
+      required: false
   - type: dropdown
     id: version
     attributes:
