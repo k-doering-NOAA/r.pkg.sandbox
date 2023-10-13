@@ -10,8 +10,6 @@ on:
   #workflow_dispatch:
   push:
     branches: [main, master]
-    paths: 
-      - 'DESCRIPTION'
 jobs:
   call-workflow:
     uses: nmfs-fish-tools/ghactions4r/.github/workflows/style-description.yml@main
