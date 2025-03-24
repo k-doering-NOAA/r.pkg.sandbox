@@ -1,2 +1,2 @@
 # r-pkg-sandbox
-minimal r package for testing.
+minimal r package for testing. 
