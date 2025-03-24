@@ -2,7 +2,7 @@ pandoc: 3.1.11
 pkgdown: 2.1.1
 pkgdown_sha: ~
 articles: {}
-last_built: 2025-03-24T16:08Z
+last_built: 2025-03-24T16:28Z
 urls:
   reference: https://k-doering-noaa.github.io/r.pkg.sandbox/reference
   article: https://k-doering-noaa.github.io/r.pkg.sandbox/articles
