@@ -1,0 +1,16 @@
+# .octocov.yml basic example
+coverage:
+  paths:
+    - coverage.xml
+codeToTestRatio:
+  code:
+    - 'R/**.R'
+  test:
+    - 'tests/testthat/test*.R'
+testExecutionTime:
+  if: true
+comment:
+  if: is_pull_request
+report:
+  if: is_default_branch
+    
