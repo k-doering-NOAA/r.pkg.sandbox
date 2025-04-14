@@ -1,8 +1,11 @@
 # Reusable workflow to calculate coverage; don't push to code cov.
+name: calc-covr-octokit
 
 on:
   pull_request:
-name: calc-covr-no-push
+
+permissions:
+  pull-requests: write
 
 jobs:
   calc-coverage:
