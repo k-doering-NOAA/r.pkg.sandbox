@@ -3,7 +3,8 @@ name: calc-covr-octokit-push
 
 on:
   push:
-    -main
+    branches:
+      - main
 
 permissions: {}
 
