@@ -14,3 +14,4 @@ comment:
 report:
   if: is_default_branch
 summary:
+  if: true
