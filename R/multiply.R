@@ -7,5 +7,8 @@
 #' @export
 multiply1 <- function(x, y) {
   final <- x * y
+  if(final == 5) {
+    some_random_code <- 1
+  }
   final # comment
 }
