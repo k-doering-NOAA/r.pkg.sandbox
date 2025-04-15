@@ -36,7 +36,7 @@ jobs:
           covr::to_cobertura(cov, filename = "coverage.xml")
         shell: Rscript {0}
   
-        uses: gaelgirodon/ci-badges-action@v1
-          with:
-            gist-id: ${{ secrets.GIST_ID }}
-            token: ${{ secrets.GIST_TOKEN }}
+      - uses: gaelgirodon/ci-badges-action@v1
+        with:
+          gist-id: ${{ secrets.GIST_ID }}
+          token: ${{ secrets.GIST_TOKEN }}
