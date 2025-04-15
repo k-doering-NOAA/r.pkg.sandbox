@@ -1,0 +1,44 @@
+# Reusable workflow to calculate coverage; don't push to code cov.
+name: calc-cov-badge
+
+on:
+  push:
+    branches:
+      - main
+
+permissions: {}
+
+jobs:
+  calc-cov-badge:
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: r-lib/actions/setup-r@v2
+        with:
+          use-public-rspm: true
+
+      - uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+          extra-packages: any::covr, any::xml2, any::htmltools, any::DT
+          needs: coverage
+
+      - name: Test coverage
+        run: |
+          cov <- covr::package_coverage(
+            quiet = FALSE,
+            clean = FALSE,
+            install_path = file.path(normalizePath(Sys.getenv("RUNNER_TEMP"), winslash = "/"), "package")
+          )
+          print(cov)
+          overall_cov <- covr::percent_coverage(cov)
+          badge <- paste0("{\"schemaVersion\":1,\"label\":\"coverage\",\"message\":\"", 
+            overall_cov, "%\",\"color\":\"grey\"}")
+          print(badge)
+          writeLines(badge, "coverage-badge.json")
+          covr::to_cobertura(cov, filename = "coverage.xml")
+        shell: Rscript {0}
+ 
+# to do: push the badge to a branch
