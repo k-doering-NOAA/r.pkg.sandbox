@@ -40,3 +40,4 @@ jobs:
         with:
           gist-id: ${{ secrets.GIST_ID }}
           token: ${{ secrets.GIST_TOKEN }}
+          ref: true
