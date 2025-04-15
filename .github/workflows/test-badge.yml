@@ -1,5 +1,5 @@
 # Reusable workflow to calculate coverage; don't push to code cov.
-name: calc-covr-octokit-push
+name: calc-cov-badge
 
 on:
   push:
@@ -9,7 +9,7 @@ on:
 permissions: {}
 
 jobs:
-  calc-coverage:
+  calc-cov-badge:
     runs-on: ubuntu-latest
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
