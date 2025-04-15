@@ -2,9 +2,10 @@
 name: calc-covr-octokit-push
 
 on:
-  push:
-    branches:
-      - main
+#  push:
+#    branches:
+#      - main
+  workflow_dispatch:
 
 permissions: {}
 

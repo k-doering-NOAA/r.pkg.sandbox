@@ -1,5 +1,5 @@
 # Reusable workflow to calculate coverage; don't push to code cov.
-name: calc-cov-badge
+name: test-badge-branch
 
 on:
   push:
@@ -9,7 +9,7 @@ on:
 permissions: {}
 
 jobs:
-  calc-cov-badge:
+  test-badge-branch:
     runs-on: ubuntu-latest
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
