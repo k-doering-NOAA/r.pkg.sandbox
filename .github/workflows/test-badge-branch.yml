@@ -38,16 +38,13 @@ jobs:
           badge <- paste0("{\"schemaVersion\":1,\"label\":\"coverage\",\"message\":\"", 
             overall_cov, "%\",\"color\":\"grey\"}")
           print(badge)
-          writeLines(badge, "coverage-badge.json")
+          dir.create("badges")
+          writeLines(badge, "badges/coverage-badge.json")
           covr::to_cobertura(cov, filename = "coverage.xml")
         shell: Rscript {0}
  
-      - name: Add badge main repo
-        run: |
-          git config --global push.autoSetupRemote true
-          git checkout -b badge
-          git add coverage-badge.json
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git commit -m 'update badge'
-          git push
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: badges
+          branch: badges
