@@ -44,7 +44,7 @@ jobs:
  
       - name: Add pdf to main repo
         run: |
-          git checkout -b badge origin/main
+          git checkout -b badge origin/branch
           git add coverage-badge.json
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
