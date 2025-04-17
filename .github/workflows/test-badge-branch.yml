@@ -42,7 +42,7 @@ jobs:
           covr::to_cobertura(cov, filename = "coverage.xml")
         shell: Rscript {0}
  
-      - name: Add pdf to main repo
+      - name: Add badge main repo
         run: |
           git config --global push.autoSetupRemote true
           git checkout -b badge
