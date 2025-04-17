@@ -34,9 +34,9 @@ jobs:
             install_path = file.path(normalizePath(Sys.getenv("RUNNER_TEMP"), winslash = "/"), "package")
           )
           print(cov)
-          overall_cov <- covr::percent_coverage(cov)
+          overall_cov <- ceiling(covr::percent_coverage(cov))
           badge <- paste0("{\"schemaVersion\":1,\"label\":\"coverage\",\"message\":\"", 
-            overall_cov, "%\",\"color\":\"grey\"}")
+            overall_cov, "%\",\"color\":\"blue\"}")
           print(badge)
           dir.create("badges")
           writeLines(badge, "badges/coverage-badge.json")
