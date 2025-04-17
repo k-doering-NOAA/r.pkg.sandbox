@@ -6,7 +6,8 @@ on:
     branches:
       - main
 
-permissions: {}
+permissions:
+  contents: write
 
 jobs:
   test-badge-branch:
@@ -41,4 +42,10 @@ jobs:
           covr::to_cobertura(cov, filename = "coverage.xml")
         shell: Rscript {0}
  
-# to do: push the badge to a branch
+      - name: Add pdf to main repo
+        run: |
+          git checkout -b badge origin/main
+          git add coverage-badge.json
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git commit -m 'update badge'
