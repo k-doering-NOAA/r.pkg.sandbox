@@ -2,7 +2,8 @@
 name: calc-covr-octokit
 
 on:
-  pull_request:
+  # pull_request:
+  workflow_dispatch:
 
 permissions:
   pull-requests: write
