@@ -24,6 +24,10 @@ jobs:
               pull_number: context.issue.number });
             return pr
 
+      - name: print output
+        run: |
+          echo ${{ steps.set-result.outputs.pr.head.ref }}
+
       - name: checkout the PR's branch
         uses: actions/checkout@v4
         with:
