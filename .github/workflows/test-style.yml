@@ -26,7 +26,8 @@ jobs:
 
       - name: checkout the PR's branch
         uses: actions/checkout@v4
-        ref: steps.set-result.outputs.pr.head.ref
+        with:
+          ref: steps.set-result.outputs.pr.head.ref
       # - uses: actions/checkout@v4
 
       # - uses: r-lib/actions/pr-fetch@v2
