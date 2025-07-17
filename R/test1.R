@@ -6,7 +6,7 @@
 #' @return A single value that is the sum of the 2 numbers.
 #' @export
 add1 <- function(x, y) {
-  final <- x+y
+  final <- x + y
   # add some extra code
   if (final == 2) {
     z <- 1
