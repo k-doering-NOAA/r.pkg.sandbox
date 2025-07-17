@@ -22,6 +22,11 @@ jobs:
       - name: run air to make changes
         run: air format .
 
+      - name: view values
+        run: |
+          echo "headref: $github.head_ref"
+          echo "refname: $github.ref_name"
+
       - name: commit output
         run: |
           git config --local user.email "action@github.com"
