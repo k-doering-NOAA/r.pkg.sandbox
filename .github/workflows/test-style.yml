@@ -26,7 +26,7 @@ jobs:
 
       - name: print output
         run: |
-          echo "Head ref: ${{ steps.set-result.outputs.pr.head.ref }}"
+          echo "Echo PR: ${{ steps.set-result.outputs.pr.head.sha}}"
 
       - name: checkout the PR's branch
         uses: actions/checkout@v4
