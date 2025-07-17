@@ -13,10 +13,10 @@ jobs:
     steps:
 
 
-      - name: View context attributes
+      - name: View context attributes (issue number)
         uses: actions/github-script@v7
         with:
-          script: console.log(context.repo.owner)
+          script: console.log(context.issue.number)
       
       - uses: actions/github-script@v7
         id: set-result
@@ -30,9 +30,10 @@ jobs:
               pull_number: context.issue.number });
             return pr
 
-      - name: print output
-        run: |
-          echo "Echo PR: ${{ steps.set-result.outputs.pr.head.sha}}"
+      - name: View context attributes (headsha)
+        uses: actions/github-script@v7
+        with:
+          script: console.log(steps.set-result.outputs.pr.head.sha)
 
       - name: checkout the PR's branch
         uses: actions/checkout@v4
