@@ -18,7 +18,7 @@ jobs:
     name: Document and Style
     uses: nmfs-ost/ghactions4r/.github/workflows/doc-and-style-r-cmds.yml@add-reusable-cmds
     with:
-      run-rm_dollar_sign: false
+      run-rm_dollar_sign: true
       commit-directly: false
       use-air: true
       
