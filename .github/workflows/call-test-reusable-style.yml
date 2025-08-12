@@ -1,0 +1,18 @@
+#This works. example of styling in a single file.
+on:
+  issue_comment:
+    types: [created]
+
+name: pr-commands
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  doc_and_style:
+    if: ${{ github.event.issue.pull_request && 
+            (github.event.comment.author_association == 'MEMBER' || github.event.comment.author_association == 'OWNER') &&
+            (startsWith(github.event.comment.body, '/test-reusable')) }}
+    name: Document and Style
+    uses: k-doering-NOAA/r.pkg.sandbox/.github/workflows/test-reusable-style.yml@main
