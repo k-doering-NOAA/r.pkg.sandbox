@@ -6,7 +6,7 @@ permissions:
   pull-requests: write
 
 jobs:
-  style_command:
+  testdoc:
     name: style
     runs-on: ubuntu-latest
     steps:
