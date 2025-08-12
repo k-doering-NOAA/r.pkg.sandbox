@@ -15,6 +15,9 @@ jobs:
 
 
 # added if statement to show how to run this if it only is on issue comment. This could be useful to incorporate into style and doc.
+      - name: Checkout the PR branch
+        uses: actions/checkout@v4
+      
       - name: Get original PR branch name
         id: get_branch
         # if: github.event_name == 'issue_comment'
