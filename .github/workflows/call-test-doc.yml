@@ -2,7 +2,7 @@ on:
   issue_comment:
     types: [created]
 
-name: pr-commands
+name: call-test-doc
 
 permissions:
   contents: write
