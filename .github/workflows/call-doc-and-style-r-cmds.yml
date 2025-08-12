@@ -17,3 +17,8 @@ jobs:
             (startsWith(github.event.comment.body, '/doc-and-style-r-cmds')) }}
     name: Document and Style
     uses: nmfs-ost/ghactions4r/.github/workflows/doc-and-style-r-cmds.yml@add-reusable-cmds
+    with:
+      run-rm_dolar_sign: true
+      commit-directly: false
+      use-air: true
+      
