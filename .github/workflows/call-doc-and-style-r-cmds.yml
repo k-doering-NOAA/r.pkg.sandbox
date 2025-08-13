@@ -18,7 +18,7 @@ jobs:
     name: Document and Style
     uses: nmfs-ost/ghactions4r/.github/workflows/doc-and-style-r.yml@try-combine
     with:
-      run-rm_dollar_sign: true
-      commit-directly: true
-      use-air: true
+      run-rm_dollar_sign: false
+      commit-directly: false
+      use-air: false
       
