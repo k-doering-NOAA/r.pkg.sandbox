@@ -8,8 +8,8 @@
 add1 <- function(x, y) {
   final <- x + y
   # add some extra code
-  if (final  == 2) {
-    z <-    1
+  if (final == 2) {
+    z <- 1
   }
   final
 }
