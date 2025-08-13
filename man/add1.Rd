@@ -12,7 +12,7 @@ add1(x, y)
 \item{y}{The second value to add}
 }
 \value{
-A single value that is the sum of the 2 numbers
+A single value that is the sum of the 2 numbers...
 }
 \description{
 This function adds together 2 numbers
