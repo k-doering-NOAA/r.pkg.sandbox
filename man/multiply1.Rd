@@ -7,9 +7,9 @@
 multiply1(x, y)
 }
 \arguments{
-\item{x}{The first number to multiply.}
+\item{x}{The first number to multiply...}
 
-\item{y}{The second number to multiply.}
+\item{y}{The second number to multiply...}
 }
 \value{
 THe multiplication of the 2 numbers
