@@ -7,7 +7,7 @@
 add1(x, y)
 }
 \arguments{
-\item{x}{The first value to add}
+\item{x}{The first value to add.}
 
 \item{y}{The second value to add}
 }
