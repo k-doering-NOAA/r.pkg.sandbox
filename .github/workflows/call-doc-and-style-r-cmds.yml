@@ -1,5 +1,5 @@
 on:
-  push:
+  pull_request:
 
 name: call-doc-and-style-r-cmds
 
@@ -13,6 +13,6 @@ jobs:
     uses: nmfs-ost/ghactions4r/.github/workflows/doc-and-style-r.yml@try-combine
     with:
       run-rm_dollar_sign: false
-      commit-directly: true
+      commit-directly: false
       use-air: false
       
