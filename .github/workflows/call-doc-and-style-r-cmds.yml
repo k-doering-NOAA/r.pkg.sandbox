@@ -16,7 +16,7 @@ jobs:
             (github.event.comment.author_association == 'MEMBER' || github.event.comment.author_association == 'OWNER') &&
             (startsWith(github.event.comment.body, '/doc-and-style-r-cmds')) }}
     name: Document and Style
-    uses: nmfs-ost/ghactions4r/.github/workflows/doc-and-style.yml@try-combine
+    uses: nmfs-ost/ghactions4r/.github/workflows/doc-and-style-r.yml@try-combine
     with:
       run-rm_dollar_sign: true
       commit-directly: true
