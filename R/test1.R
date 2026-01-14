@@ -1,4 +1,4 @@
-#' addition function
+#' addition function.
 #'
 #' This function adds together 2 numbers
 #' @param x The first value to add
